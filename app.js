@@ -23,7 +23,7 @@ app.post('/login',async (req, res) => {
     if (isAuthenticated) {
       res.redirect('/addetails.html');
     } else {
-      res.send('Invalid username or password. Please try again.');
+      res.send('Invalid username or password. Click <a href="/login.html">here</a> to try again.');
     }
   });
 
